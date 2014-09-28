@@ -6,6 +6,11 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
+/**
+ * Clase actividad que controla una calculadora simple de enteros
+ * @author mikesaurio
+ *
+ */
 public class CalculadoraMainActivity extends Activity {
 
 	private TextView pantalla;
@@ -229,6 +234,10 @@ public class CalculadoraMainActivity extends Activity {
 	}
 	
 	
+	/**
+	 * metodo que ingresa un numero a la pantalla con las validaciones adecuadas
+	 * @param numero (String) nœmero a introdicir 
+	 */
 	public void ponerNumero(String numero){
 		if(pantalla.getText().toString().equals("0")){
 			pantalla.setText(numero);
